@@ -1,9 +1,11 @@
+/* Reset de estilos */
 * {
   padding: 0;
-  margin:0;
+  margin: 0;
   box-sizing: border-box;
 }
 
+/* Estilos gerais da aplicação */
 .App {
   display: flex;
   justify-content: center;
@@ -12,69 +14,88 @@
   height: 100vh;
 }
 
-label, select {
-  margin-top: 15px;
-  margin-bottom: 15px;
-  margin-left: 15px;
-  margin-right: 15px;
-  font-size: 30px;
+.title {
+  margin-bottom: 10px;
 }
 
-.input {
-  margin-top: 15px;
-  margin-bottom: 15px;
-  margin-left: 15px;
-  margin-right: 15px;
-  font-size: 30px;
-  background-color: turquoise;
+.Container-1 {
+  display: flex;
+  flex-direction: column;
+  background: #f8f8f8;
+  padding: 10px 50px;
+  margin: 10px;
+  border-radius: 10px;
+  justify-content: center;
+}
+
+/* Estilos dos rótulos e campos de entrada */
+input,
+label {
+  margin: 5px;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* Estilos dos botões */
+.botao {
+  justify-content: center;
+  font-size: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: #808080;
+  color: white;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.selecionado {
+  background: #a0a0a0;
+}
+.entrada1,
+.entrada2 {
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.entradas {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5px 20px;
+}
+
+.operacoes {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 5px 20px;
 }
 
 .resultado {
-  margin-top: 15px;
-  margin-bottom: 15px;
-  margin-left: 15px;
-  margin-right: 15px;
-  font-size: 30px;
-  background: turquoise;
+  margin: 15px;
+  font-size: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding: 5px 20px;
 }
 
-.botao {
-  margin-top: 15px;
-  margin-bottom: 15px;
-  margin-left: 15px;
-  margin-right: 15px;
-  font-size: 40px;
-  background: gainsboro;
-	color: black;
-	border-color: gainsboro;
-  justify-content: center;
-  align-items: center;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 50px;
-  padding-right: 50px;
+.rodape {
+  margin-top: 10px;
+  font-size: 10px;
+  font-weight: 400;
 }
 
-.input_style{
-	padding: 10px;
-	border: none;
-	margin-top: 15px;
-  margin-bottom: 15px;
-  margin-left: 15px;
-  margin-right: 15px;
-	border-radius: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: turquoise;
+.result {
   font-size: 30px;
+  font-weight: 600;
 }
